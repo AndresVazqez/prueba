@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Rellenar el siguiente formulario</h1>
+    <!--method post datos delicados, en get se vacian en la url-->
+    <form method="get" action="">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="name">Nombre</label>
+        <input type="text" name="first_name" id="name" />
+
+        <label for="lname">Apellido</label>
+        <input type="text" name="last_name" id="lname" />
+
+        <select name="user_city" id="city">
+          <option value="madrid">Madrid</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="alicante">Alicante</option>
+          <option value="valencia">Valencia</option></select
+        ><br />
+
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="user_name" id="username" required /><br />
+
+        <label for="pass">Contraseña</label>
+        <input
+          type="password"
+          name="password"
+          id="pass"
+          pattern="[A-Za-z0-9]{5,40}"
+          required
+        /><br />
+
+        <label for="email">Correo electronico</label>
+        <input type="email" name="user_email" id="email" required /><br />
+
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" name="date" id="date" /><br />
+
+        <label for="ucolor">Color favorito</label>
+        <input type="color" name="user_color" id="ucolor" /><br />
+
+        <label for="user_vip">¿Cliente VIP?</label>
+        <input type="checkbox" name="vip" id="user_vip" /><br />
+
+        <label for="message">Mensaje:</label>
+        <textarea
+          name="user-message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu texto"
+        ></textarea>
+      </fieldset>
+      <!-- <input
+        type="sumit"
+        name=""
+        id=""
+      /> -->
+      <!-- nos permite solo texto, button es mas flexible-->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

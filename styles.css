@@ -1,0 +1,43 @@
+/*Selectores de etiquetas*/
+
+body { 
+    margin: 0; 
+    font-family: "Roboto", sans-serif; ;
+}
+
+h2 {
+    color: red; 
+}
+
+/*Selectores de clase*/
+
+.title1 {
+    color:blue;
+}
+
+.title {
+    color: cyan;
+}
+
+.span {
+    color: orange;
+}
+
+.main-img {
+    width: 400px;
+    /*% = 16px estáticas
+    1em / rem = 16px  dinámicas*/
+}
+
+nav {
+    background: lightcoral;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: whit;
+    margin-right: 1rem;
+}
